@@ -1,0 +1,162 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f9f7;
+            color: #333;
+        }
+        header {
+            background-color: #2c7a7b;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #38b2ac;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #2c7a7b;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            gap: 1rem;
+        }
+        article {
+            flex: 2;
+            min-width: 300px;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        aside {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #2c7a7b;
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            background-color: #2c7a7b;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin: 0.25rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Website Layout Example</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <article>
+            <h2>Main Content Area</h2>
+            <p>This is the main content area of the webpage. Here you can find the primary information about the website's purpose and content.</p>
+            
+            <h3>Article Subheading</h3>
+            <p>This is a sample paragraph in the article section. You can add more content here to fill out the main content area of your webpage.</p>
+            
+            <h3>Featured List</h3>
+            <ul>
+                <li>First important point about the topic</li>
+                <li>Second key feature or information</li>
+                <li>Third notable item worth mentioning</li>
+                <li>Fourth interesting fact or detail</li>
+            </ul>
+            
+            <p>Additional content can go here to provide more context or information about the topic being discussed in the article.</p>
+        </article>
+        
+        <aside>
+            <h3>Sidebar</h3>
+            <p>This is the sidebar area where you can place additional information, links, or related content.</p>
+            
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="https://rohan-xtha.github.io/portfolio/">ABOUT ME</a></li>
+                <li><a href="#link2">First project</a></li>
+                <li><a href="#link3">Related Article 3</a></li>
+                <li><a href="#link4">Related Article 4</a></li>
+            </ul>
+            
+            <h4>Additional Information</h4>
+            <p>You can use this space for advertisements, recent posts, or any other supplementary content.</p>
+        </aside>
+    </div>
+    
+    <footer>
+        <p>&copy; thank u for visithing my website</p>
+    </footer>
+</body>
+</html>
